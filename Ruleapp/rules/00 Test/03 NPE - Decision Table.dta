@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>03 NPE - Decision Table</name>
+  <uuid>e92226d0-3744-4bb4-9ca9-ac619c539247</uuid>
+  <documentation><![CDATA[// Working Version
+definitions
+    set 'LocalNames' to a local name in the local names of the person of request
+            where all of the following conditions are true :
+                    - the name of this local name is not NULL
+                    - the type of this local name is not NULL
+                    - the type of this local name is "Native" ;
+if
+    the person of request is not NULL]]></documentation>
+  <locale>en_US</locale>
+  <definition>
+<DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+  <Body>
+    <Properties>
+      <Property Name="OptimizedExpressions"><![CDATA[false]]></Property>
+      <Property Name="OptimizedExpressionMemory"><![CDATA[false]]></Property>
+    </Properties>
+    <Preconditions>
+      <Text><![CDATA[definitions
+    set 'LocalNames' to a local name in the local names of the person of request
+            where the type of this local name is not NULL
+            and the type of this local name is "Native" ;
+
+if
+    all of the following conditions are true :
+            - the person of request is not NULL
+            - the name of LocalNames is not NULL]]></Text>
+    </Preconditions>
+    <Structure>
+      <ConditionDefinitions>
+        <ConditionDefinition Id="C0">
+          <ExpressionDefinition>
+            <Text><![CDATA[the name of LocalNames is <a string>]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+      </ConditionDefinitions>
+      <ActionDefinitions>
+        <ActionDefinition Id="A0">
+          <ExpressionDefinition>
+            <Text><![CDATA[print ( "Entering 03 NPE - Decision Table" )]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+      </ActionDefinitions>
+    </Structure>
+    <Contents>
+      <Partition DefId="C0">
+        <Condition>
+          <Expression>
+            <Param><![CDATA["Jonny"]]></Param>
+          </Expression>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+      </Partition>
+    </Contents>
+  </Body>
+</DT>
+</definition>
+</ilog.rules.studio.model.dt:DecisionTable>

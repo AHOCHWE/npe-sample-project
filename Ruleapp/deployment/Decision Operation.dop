@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="Decision_Operation" usingRuleflow="true" ruleflowName="Mainflow" targetRuleProjectName="Ruleapp">
+  <name>Decision Operation</name>
+  <uuid>d865c270-797d-414f-ad79-903b79539958</uuid>
+  <referencedVariables variableName="request" variableSetName="Interface">
+    <variableSet href="../../BOM/rules/Interface.var#2107e154-c258-4bb3-9018-fa89c60c5169"/>
+  </referencedVariables>
+  <referencedVariables variableName="response" variableSetName="Interface" direction="OUT">
+    <variableSet href="../../BOM/rules/Interface.var#2107e154-c258-4bb3-9018-fa89c60c5169"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Mainflow.rfl#508a2f89-555a-4663-af7f-e8accf96f8ac"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="Decision Operation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../Ruleapp#87128efc-af78-4c41-9422-2be0dacde005"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,11 @@
+{
+	"applicationCategory": "Test2",
+	"person": {
+		"firstName": "John",
+		"lastName": "Doe",
+		"nickNames": [
+			"Jonny",
+			"Jo"
+		]
+	}
+}
