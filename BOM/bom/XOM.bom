@@ -57,7 +57,6 @@ class JsonParser
 {
     JsonParser();
     static string chooseTestFile();
-    static java.lang.Boolean notNullCheck(object arg);
     static com.mb.Request parseInRequest(string arg);
     static void parseOutFile(string arg1, object arg2);
 }

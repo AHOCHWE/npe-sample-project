@@ -38,7 +38,6 @@ com.mb.Request#concept.label = request
 com.mb.Request.applicationCategory#phrase.action = set the application category of {this} to {application category}
 com.mb.Request.applicationCategory#phrase.navigation = {application category} of {this}
 com.mb.Request.person#phrase.action = set the person of {this} to {person}
-com.mb.Request.person#phrase.clearer = clear the person of {this}
 com.mb.Request.person#phrase.navigation = {person} of {this}
 
 # com.mb.Response
@@ -53,6 +52,5 @@ com.mb.Response.fullNameWithNickname#phrase.navigation = {full name with nicknam
 # com.mb.util.JsonParser
 com.mb.util.JsonParser#concept.label = json parser
 com.mb.util.JsonParser.chooseTestFile()#phrase.navigation = json parser.chooseTestFile()
-com.mb.util.JsonParser.notNullCheck(java.lang.Object)#phrase.navigation = {0} is not NULL
 com.mb.util.JsonParser.parseInRequest(java.lang.String)#phrase.navigation = json parser.parseInRequest({0})
 com.mb.util.JsonParser.parseOutFile(java.lang.String,java.lang.Object)#phrase.action = json parser.parseOutFile({0}, {1})

@@ -130,15 +130,4 @@ public class JsonParser {
             throw new RuntimeException("Could not create directory: " + path);
         }
     }
-    
-    /**
-	 * This function checks if a given object is not null
-	 * 
-	 * @param object
-	 *            = Object type that is checked for non null values
-	 * @return boolean stating if object is not null
-	 */
-	public static Boolean notNullCheck(Object object) {
-		return object != null;
-	}
 }

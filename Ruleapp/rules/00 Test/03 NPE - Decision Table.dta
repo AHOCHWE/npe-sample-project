@@ -22,13 +22,13 @@ if
     <Preconditions>
       <Text><![CDATA[definitions
     set 'LocalNames' to a local name in the local names of the person of request
-            where the type of this local name is not NULL
+            where the type of this local name is not null
             and the type of this local name is "Native" ;
 
 if
     all of the following conditions are true :
-            - the person of request is not NULL
-            - the name of LocalNames is not NULL]]></Text>
+            - the person of request is not null
+            - the name of LocalNames is not null]]></Text>
     </Preconditions>
     <Structure>
       <ConditionDefinitions>
