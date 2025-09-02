@@ -1,0 +1,7 @@
+# Eclipse
+**/.metadata
+**/bin
+**/classes
+**/output
+XOM*.jar
+XOM*.zip
