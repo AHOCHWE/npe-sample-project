@@ -1,0 +1,13 @@
+{
+	"applicationCategory": "Test2",
+	"person": {
+		"firstName": "Johnny",
+		"lastName": "Doe",
+		"localNames": [
+			{
+				"name": "Jonny",
+				"type": "Native"
+			}
+		]
+	}
+}

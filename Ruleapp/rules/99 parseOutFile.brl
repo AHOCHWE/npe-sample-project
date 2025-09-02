@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>99 parseOutFile</name>
+  <uuid>d1c1c072-4a9b-4fba-8a47-0b5d306c5549</uuid>
+  <documentation><![CDATA[    write JSON file scoringResponse to "scoringResponse" ;
+    write JSON file applicationRequest to "applicationRequest" ;
+    print ( "--- Successful response created ---" ) ;]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+    json parser.parseOutFile ( "Response" , response ) ;
+    json parser.parseOutFile ( "Request" , request ) ;
+    print ( "--- Successful response created ---" ) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

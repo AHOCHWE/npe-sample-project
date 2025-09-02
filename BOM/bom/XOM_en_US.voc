@@ -1,0 +1,58 @@
+# Vocabulary Properties
+uuid = 9110fa3b-e8be-40b0-ba20-c3f94f6ef1c6
+
+# com.mb.IndividualDisclosure
+com.mb.IndividualDisclosure#concept.label = individual disclosure
+com.mb.IndividualDisclosure.nationality#phrase.action = set the nationality of {this} to {nationality}
+com.mb.IndividualDisclosure.nationality#phrase.navigation = {nationality} of {this}
+
+# com.mb.LocalName
+com.mb.LocalName#concept.label = local name
+com.mb.LocalName.localNickNames#phrase.action = set the local nick names of {this} to {local nick name}
+com.mb.LocalName.localNickNames#phrase.navigation = {local nick name} of {this}
+com.mb.LocalName.name#phrase.action = set the name of {this} to {name}
+com.mb.LocalName.name#phrase.navigation = {name} of {this}
+com.mb.LocalName.type#phrase.action = set the type of {this} to {type}
+com.mb.LocalName.type#phrase.navigation = {type} of {this}
+
+# com.mb.Nationality
+com.mb.Nationality#concept.label = nationality
+com.mb.Nationality.citizenships#phrase.action = set the citizenships of {this} to {citizenship}
+com.mb.Nationality.citizenships#phrase.navigation = {citizenship} of {this}
+
+# com.mb.Person
+com.mb.Person#concept.label = person
+com.mb.Person.firstName#phrase.action = set the first name of {this} to {first name}
+com.mb.Person.firstName#phrase.navigation = {first name} of {this}
+com.mb.Person.individualDisclosure#phrase.action = set the individual disclosure of {this} to {individual disclosure}
+com.mb.Person.individualDisclosure#phrase.navigation = {individual disclosure} of {this}
+com.mb.Person.lastName#phrase.action = set the last name of {this} to {last name}
+com.mb.Person.lastName#phrase.navigation = {last name} of {this}
+com.mb.Person.localNames#phrase.action = set the local names of {this} to {local name}
+com.mb.Person.localNames#phrase.navigation = {local name} of {this}
+com.mb.Person.nickNames#phrase.action = set the nick names of {this} to {nick name}
+com.mb.Person.nickNames#phrase.navigation = {nick name} of {this}
+
+# com.mb.Request
+com.mb.Request#concept.label = request
+com.mb.Request.applicationCategory#phrase.action = set the application category of {this} to {application category}
+com.mb.Request.applicationCategory#phrase.navigation = {application category} of {this}
+com.mb.Request.person#phrase.action = set the person of {this} to {person}
+com.mb.Request.person#phrase.clearer = clear the person of {this}
+com.mb.Request.person#phrase.navigation = {person} of {this}
+
+# com.mb.Response
+com.mb.Response#concept.label = response
+com.mb.Response.applicationCategory#phrase.action = set the application category of {this} to {application category}
+com.mb.Response.applicationCategory#phrase.navigation = {application category} of {this}
+com.mb.Response.fullName#phrase.action = set the full name of {this} to {full name}
+com.mb.Response.fullName#phrase.navigation = {full name} of {this}
+com.mb.Response.fullNameWithNickname#phrase.action = set the full name with nickname of {this} to {full name with nickname}
+com.mb.Response.fullNameWithNickname#phrase.navigation = {full name with nickname} of {this}
+
+# com.mb.util.JsonParser
+com.mb.util.JsonParser#concept.label = json parser
+com.mb.util.JsonParser.chooseTestFile()#phrase.navigation = json parser.chooseTestFile()
+com.mb.util.JsonParser.notNullCheck(java.lang.Object)#phrase.navigation = {0} is not NULL
+com.mb.util.JsonParser.parseInRequest(java.lang.String)#phrase.navigation = json parser.parseInRequest({0})
+com.mb.util.JsonParser.parseOutFile(java.lang.String,java.lang.Object)#phrase.action = json parser.parseOutFile({0}, {1})

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>02 NPE - Action Rule</name>
+  <uuid>738a9284-beea-4bc1-a263-8a00529e165b</uuid>
+  <documentation><![CDATA[]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    all of the following conditions are true :
+            - the individual disclosure of the person of request is not NULL
+            - the nationality of the individual disclosure of the person of request is not NULL
+            - the number of elements in the citizenships of the nationality of the individual disclosure of the person of request is more than 0
+            - there is at least one string in the citizenships of the nationality of the individual disclosure of the person of request
+                    where this string is not one of { "AT" , "DE" } ,
+            - any of the following conditions is true :
+                    - the first name of the person of request is null
+                    - the number of elements in the nick names of the person of request equals 0
+then
+    print ( "Entering 02 NPE - Action rule" ) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
