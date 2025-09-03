@@ -2,7 +2,9 @@
 
 ## Description
 
-This project demonstrates a NullPointerException (NPE) issue encountered after upgrading IBM ODM from 8.10.4 to 9.5.0, as reported in ticket [TS020171098](https://www.ibm.com/mysupport/s/case/500gJ000003vhmVQAQ/unexpected-nullpointerexceptions-occurring-in-business-rules-after-ibm-odm-upgrade-8104-950).  It serves as a minimal, reproducible example for debugging and understanding the problem.
+This project demonstrates a NullPointerException (NPE) issue encountered after upgrading IBM ODM from 8.10.4 to 9.5.0, as reported in ticket [TS020171098](https://www.ibm.com/mysupport/s/case/500gJ000003vhmVQAQ/unexpected-nullpointerexceptions-occurring-in-business-rules-after-ibm-odm-upgrade-8104-950).
+
+> It serves as a minimal, reproducible example for debugging and understanding the problem.
 
 ## Project Structure
 
