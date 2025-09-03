@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
-  <name>02 FIX NPE - Decision Table</name>
-  <uuid>d6b10d5a-a33b-48b3-a1b2-e45f1600f1b2</uuid>
-  <documentation><![CDATA[// Working Version
-definitions
-    set 'LocalNames' to a local name in the local names of the person of request
-            where all of the following conditions are true :
-                    - the name of this local name is not NULL
-                    - the type of this local name is not NULL
-                    - the type of this local name is "Native" ;
-if
-    the person of request is not NULL]]></documentation>
+  <name>02 NPE - Decision Table</name>
+  <uuid>e92226d0-3744-4bb4-9ca9-ac619c539247</uuid>
+  <documentation><![CDATA[]]></documentation>
   <locale>en_US</locale>
   <definition>
 <DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
@@ -22,12 +14,13 @@ if
     <Preconditions>
       <Text><![CDATA[definitions
     set 'LocalNames' to a local name in the local names of the person of request
-            where all of the following conditions are true :
-                    - the name of this local name is not null
-                    - the type of this local name is not null
-                    - the type of this local name is "Native" ;
+            where the type of this local name is not null
+            and the type of this local name is "Native" ;
+
 if
-    the person of request is not null]]></Text>
+    all of the following conditions are true :
+            - the person of request is not null
+            - the name of LocalNames is not null]]></Text>
     </Preconditions>
     <Structure>
       <ConditionDefinitions>
