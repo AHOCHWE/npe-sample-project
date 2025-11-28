@@ -1,7 +1,7 @@
 
 #loadGetterSetterAsProperties
 property origin "xom:/BOM//XOM"
-property uuid "f111680a-5b8e-4b81-bb02-f83aa0a7a827"
+property uuid "cde28a12-781b-4453-ba40-ed9323d821cf"
 package com.mb;
 
 
